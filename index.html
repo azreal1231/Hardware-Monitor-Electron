@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>My Monitoring System</title>
+    <link rel="shortcut icon" type="image/png" href="./static/imgs/lol.jpg">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+    
+    <script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/apexcharts/dist/apexcharts.css">
+
+
+    <link rel="stylesheet" href="./apex_custom.css">
+    <link rel="stylesheet" href="./static/scroll_bar.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="content-area">
+        <div class="container-fluid">
+          <div class="main">
+            <div class="row sparkboxes mt-4 d-flex justify-content-cente">
+              <div class="col-md-3">
+                <div class="box box1">
+                  <div class="" >
+                    <h3>OS</h3>
+                    <h4 id="os_name" style="color: blueviolet;"></h4>
+                  </div>
+                  <div id="spark1"></div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box box3">
+                  <div class="details">
+                    <h3>Drives</h3>
+                    <ul id="drives" class="text-info">
+                      
+                    </ul>
+                  </div>
+                  <div id="spark3"></div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box box2">
+                  <div class="">
+                    <h3>CPU</h3>
+                    <h4 id="cpu_name" style="color: crimson;"></h4>
+                  </div>
+                  <div id="spark2"></div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="box box2">
+                  <div class="">
+                    <h3>GPU</h3>
+                    <h4 id="gpu_name" style="color: rgb(67, 187, 11);"></h4>
+                  </div>
+                  <div id="spark2"></div>
+                </div>
+              </div>
+              
+              <!-- <div class="col-md-3">
+                <div class="box box4">
+                  <div class="details">
+                    <h3>22</h3>
+                    <h4>SALES</h4>
+                  </div>
+                  <div id="spark4"></div>
+                </div>
+              </div> -->
+            </div>
+            <div class="row mt-4 d-flex justify-content-cente">
+              <div class="col-md-5">
+                  <div class="box columnbox mt-4 text-center">
+                    <h4 class="text-secondary" id="avg_cpu_speed"></h4>
+                    <div id="chart_cpu_speed"> </div>
+                  </div>
+              </div>
+              <div class="col-md-7">
+                  <div class="box mt-4 text-center">
+                    <h4 class="text-secondary">Net Usage</h4>
+                    <div id="chart_net_usage"> </div>
+                    <!-- <div id="linechart"></div> -->
+                  </div>
+              </div>
+            </div>
+
+            <div class="row d-flex justify-content-center">
+              <div class="col-md-5">
+                <div class="box radialbox mt-4 text-center">
+                  <h4 class="text-secondary" id="total_ram"></h4>
+                  <div id="chart_ram_usage"> </div>
+                </div>
+              </div>
+              <div class="col-md-5">
+                <div class="box radialbox mt-4 text-center">
+                  <h4 class="text-secondary">CPU Load</h4>
+                  <div id="chart_cpu_usage"> </div>
+                </div>
+              </div>
+              <!-- <div class="col-md-7">
+                  <div class="box mt-4">
+                    <div class="mt-4">
+                      <div id="progress1"></div>
+                    </div>
+                    <div class="mt-4">
+                      <div id="progress2"></div>
+                    </div>
+                    <div class="mt-4">
+                      <div id="progress3"></div>
+                    </div>
+                  </div>
+              </div> -->
+            </div>
+
+            <!-- <div class="row">
+              <div class="float-right edit-on-codepen">
+                
+              </div>
+            </div> -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
+<script src="./ap.js"></script>
+<!-- <script src="./kak.js"></script> -->
+<!-- <script src="./apex_cutom.js"></script> -->

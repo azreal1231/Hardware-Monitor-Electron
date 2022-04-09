@@ -1,0 +1,30 @@
+{
+  "name": "hardware-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azreal1231/hardware-monitor-electron.git"
+  },
+  "author": "slatelight pty ltd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azreal1231/hardware-monitor-electron/issues"
+  },
+  "homepage": "https://github.com/azreal1231/hardware-monitor-electron#readme",
+  "devDependencies": {
+    "electron": "^18.0.3"
+  },
+  "dependencies": {
+    "apexcharts": "^3.35.0",
+    "bootstrap": "^5.1.3",
+    "electron-packager": "^15.4.0",
+    "os-utils": "^0.0.14",
+    "systeminformation": "^5.11.9"
+  }
+}
