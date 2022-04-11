@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:; default-src 'self' http://XX.XX.XX.XX:8084/mypp/"> -->
     <link href="./styles.css" rel="stylesheet">
     <title>My Monitoring System</title>
     <link rel="shortcut icon" type="image/png" href="./static/imgs/lol.jpg">
@@ -16,9 +17,14 @@
 
     <link rel="stylesheet" href="./apex_custom.css">
     <link rel="stylesheet" href="./static/scroll_bar.css">
+    <link rel="stylesheet" href="./static/style.css">
+
+    <script src="./node_modules/angular/angular.min.js"></script>
   </head>
-  <body>
-    <div id="wrapper">
+  <body ng-app="sampleApp" ng-controller="AngularController">
+    <div ng-include="'settings.html'"></div>
+
+    <div id="wrapper" class="mt-4">
       <div class="content-area">
         <div class="container-fluid">
           <div class="main">
@@ -126,9 +132,16 @@
         </div>
       </div>
     </div>
-    
+    <div style="max-height: 100px;">
+
+    </div>
   </body>
 </html>
 <script src="./ap.js"></script>
-<!-- <script src="./kak.js"></script> -->
-<!-- <script src="./apex_cutom.js"></script> -->
+<script>
+const sampleApp = angular.module('sampleApp',[]);
+sampleApp.controller('AngularController', function($scope) {
+        
+
+});
+</script>
