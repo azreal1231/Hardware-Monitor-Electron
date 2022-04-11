@@ -1,0 +1,36 @@
+.settings_btn {
+    background-color: rgba(128, 0, 128, 0.514);
+    color: white;
+    position: fixed;
+    right: 0;
+    top: 20%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+
+.settings_btn:hover {
+    color: aqua;
+}
+.settings_btn li:hover {
+    color: rgb(255, 0, 255);
+}
+
+.my-offcanvas {
+    border-top-left-radius: 150px;
+    border-bottom-left-radius: 150px;
+    max-width: 300px;
+}
+
+
+.form-check-input:checked {
+    background-color: slateblue;
+    border-color: slateblue;
+}
+
+.form-switch .form-check-input {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='slateblue'/%3e%3c/svg%3e");
+}
+.form-switch .form-check-input:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='slateblue'/%3e%3c/svg%3e");
+}
