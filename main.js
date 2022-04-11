@@ -8,6 +8,7 @@ app.on("ready", () => {
     height: 1080,
     frame: true,
     titleBarOverlay: false,
+    show: false,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
@@ -16,6 +17,29 @@ app.on("ready", () => {
     },
   });
   mainWindow.loadURL(`file://${__dirname}/index.html`);
-  mainWindow.setMenuBarVisibility(false)
+  mainWindow.center();
+  mainWindow.setMenuBarVisibility(true)
+
+  mainWindow.webContents.openDevTools()
+
+  var splash = new BrowserWindow({
+    width: 600, 
+    height: 600, 
+    transparent: true, 
+    frame: false, 
+    alwaysOnTop: true 
+  });
+
+  splash.loadFile('splashScreen.html');
+  // splash.center();
+
+  setTimeout(function () {
+    splash.close();
+    mainWindow.show();
+  }, 2000);
 
 });
+
+// splash.close();
+// mainWindow.show();
+
